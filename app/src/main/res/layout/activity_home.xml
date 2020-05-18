@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.HomeActivity"
+    android:background="@color/backgroundColor">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryDarkColor"
+        android:elevation="4dp"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/primaryTextColor"
+        app:titleMarginStart="30dp"
+        tools:ignore="MissingConstraints">
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/btnAllStates"
+        android:layout_width="108dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/secondaryColor"
+        android:contentDescription="@string/bot_o_para_acessar_a_lista_com_todos_estados_brasileiros"
+        android:text="Estados Brasileiros"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toStartOf="@+id/btnAllcidades"
+        app:layout_constraintStart_toEndOf="@+id/btnAllcidades2"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllCountry2" />
+
+    <Button
+        android:id="@+id/btnAllcidades"
+        android:layout_width="104dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="null"
+        android:text="Cidades Brasileiras"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllCountry2" />
+
+    <Button
+        android:id="@+id/btnAllcidades2"
+        android:layout_width="104dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="null"
+        android:text="Brasil"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllCountry2" />
+
+    <Button
+        android:id="@+id/btnAllCountry"
+        android:layout_width="355dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="88dp"
+        android:background="@color/secondaryColor"
+        android:contentDescription="@string/bot_o_para_acessar_a_lista_de_todos_os_pa_ses"
+        android:text="Países"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBar" />
+
+    <Button
+        android:id="@+id/btnAllCountry2"
+        android:layout_width="355dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="@string/bot_o_para_acessar_a_lista_de_todos_os_pa_ses"
+        android:text="Cidades"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllCountry3" />
+
+    <Button
+        android:id="@+id/btnAllCountry3"
+        android:layout_width="355dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="@string/bot_o_para_acessar_a_lista_de_todos_os_pa_ses"
+        android:text="Estados"
+        android:textColor="@color/primaryTextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAllCountry" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBar"
+        app:srcCompat="@mipmap/ic_virus1_foreground" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBar"
+        app:srcCompat="@mipmap/ic_virus1_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
