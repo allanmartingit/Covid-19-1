@@ -26,7 +26,6 @@ class all_states : AppCompatActivity() {
         setContentView(R.layout.activity_all_states)
         setSupportActionBar(findViewById(R.id.appBar))
         CarregaDados()
-
         rvDados.layoutManager = GridLayoutManager(this,2) as RecyclerView.LayoutManager?
         rvDados.itemAnimator = DefaultItemAnimator()
         rvDados.adapter = adapter

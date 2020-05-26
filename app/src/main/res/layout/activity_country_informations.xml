@@ -24,38 +24,36 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="4dp"
         android:contentDescription="@string/dia_do_boletim"
         android:text="10"
         android:textColor="@color/secondaryDarkColor"
         android:textSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mes"
         app:layout_constraintTop_toBottomOf="@+id/cardView6" />
 
     <TextView
         android:id="@+id/mes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="4dp"
         android:contentDescription="@string/m_s_do_boletim"
-        android:text="DEZEMBRO"
+        android:text="DEZ"
         android:textColor="@color/secondaryDarkColor"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/dia"
         app:layout_constraintTop_toBottomOf="@+id/cardView6" />
 
     <TextView
         android:id="@+id/pais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:contentDescription="@string/nome_do_pa_s"
         android:text="BRASIL"
         android:textColor="@color/secondaryDarkColor"
         android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBar" />
 

@@ -27,7 +27,6 @@ class StateInformations : AppCompatActivity() {
 
         dia.text = arrayState.date.toString().substring(0,2)
         mes.text = alterMonth(arrayState.date.toString())
-        hora.text = arrayState.hour
         cidade.text = arrayState.state
         casos.text = arrayState.cases.toString()
         mortes.text = arrayState.deaths.toString()

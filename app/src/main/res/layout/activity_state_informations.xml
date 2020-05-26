@@ -21,54 +21,45 @@
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
-        android:contentDescription="@string/dia_do_boletim"
         android:id="@+id/dia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/dia_do_boletim"
+        android:text="10"
         android:textColor="@color/secondaryDarkColor"
-        android:textSize="50sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toStartOf="@+id/mes"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView7" />
 
     <TextView
-        android:contentDescription="@string/m_s_do_boletim"
         android:id="@+id/mes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="132dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/m_s_do_boletim"
+        android:text="dez"
         android:textColor="@color/secondaryDarkColor"
-        android:textSize="50sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView7" />
 
     <TextView
-        android:contentDescription="@string/hora_do_boletim"
-        android:id="@+id/hora"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:textColor="@color/secondaryDarkColor"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/cidade"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dia" />
-
-    <TextView
-        android:contentDescription="@string/nome_do_estado"
         android:id="@+id/cidade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/nome_do_estado"
+        android:text="Rio Grande do Sul "
         android:textColor="@color/secondaryDarkColor"
-        android:textSize="25sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mes" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBar" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
@@ -203,11 +194,12 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
         app:layout_constraintTop_toBottomOf="@+id/cardView5"
-        tools:layout_editor_absoluteX="16dp" >
+        tools:layout_editor_absoluteX="16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -221,27 +213,27 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:text="@string/descartados"
+                android:textColor="@color/secondaryDarkColor"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.521"
-                android:textColor="@color/secondaryDarkColor"/>
+                app:layout_constraintVertical_bias="0.521" />
 
             <TextView
-                android:contentDescription="@string/n_mero_de_descartados"
                 android:id="@+id/descartados"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="36dp"
                 android:layout_marginBottom="10dp"
+                android:contentDescription="@string/n_mero_de_descartados"
+                android:textColor="@color/secondaryDarkColor"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.516"
-                android:textColor="@color/secondaryDarkColor"/>
+                app:layout_constraintVertical_bias="0.516" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
